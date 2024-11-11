@@ -1,0 +1,110 @@
+/* Basic Reset and Body Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f5f7;
+    color: #333;
+}
+
+/* Header and Footer */
+header, footer {
+    text-align: center;
+    margin: 15px 0;
+    color: #fff;
+    background-color: #4a90e2; /* Professional blue */
+    width: 100%;
+    padding: 10px 0;
+}
+
+header h1, footer p {
+    margin: 0;
+}
+
+/* Section Styling */
+section {
+    width: 80%;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Car Showcase Styling */
+.car-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px;
+}
+
+.car-card {
+    width: 200px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.car-card:hover {
+    background-color: #f0f8ff;
+    transform: translateY(-5px);
+}
+
+/* Image Styling - Make All Images Uniform */
+.car-card img {
+    width: 100%;
+    height: auto;
+    max-height: 150px; /* Ensures images stay within a reasonable size */
+    border-radius: 6px;
+    object-fit: cover; /* Ensures images fill the space without distortion */
+    margin-bottom: 10px;
+}
+
+/* Input Section Styling */
+.input-section {
+    margin: 10px 0;
+}
+
+#descriptionOutput {
+    margin-top: 15px;
+    font-style: italic;
+    color: #4a90e2;
+}
+
+/* Button Styling */
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #357ABD;
+}
+
+/* Footer Styling */
+footer {
+    color: #ffffff;
+    font-size: 14px;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Showcase & Customizer</title>
+    <link rel="stylesheet" href="combinedStyle.css">
+    <script src="jquery-3.6.0.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Car Showcase & Customizer</h1>
+    </header>
+
+    <!-- Car Showcase Section -->
+    <section id="showcase">
+        <h2>Explore Our Cars</h2>
+        <p>Hover over each car to reveal specifications. Click to view the price.</p>
+        <div class="car-cards">
+            <div class="car-card" data-price="$150,000">
+                <img src="car1.png" alt="Car 1">
+                <h3>Sporty Sedan</h3>
+                <p>Main Specs: V6 Engine, 300 HP, 0-60 in 5.2s</p>
+            </div>
+            <div class="car-card" data-price="$144,000">
+                <img src="car2.png" alt="Car 2">
+                <h3>Luxury SUV</h3>
+                <p>Main Specs: V8 Engine, AWD, 350 HP</p>
+            </div>
+            <div class="car-card" data-price="$50,000">
+                <img src="car3.png" alt="Car 3">
+                <h3>Eco Hatchback</h3>
+                <p>Main Specs: Electric Motor, 150 HP, 300-mile range</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Car Customizer Section -->
+    <section id="customizer">
+        <h2>Customize a Car Description</h2>
+        <div class="input-section">
+            <label for="carModel">Car Model:</label>
+            <input type="text" id="carModel" placeholder="Enter car model">
+        </div>
+
+        <div class="input-section">
+            <label for="carSpecs">Specifications:</label>
+            <textarea id="carSpecs" rows="4" cols="50" placeholder="Enter specifications"></textarea>
+        </div>
+
+        <button id="generateDescription">Generate Description</button>
+
+        <div id="descriptionOutput"></div>
+    </section>
+
+    <footer>
+        <p>© 2024 Car Showcase & Customizer</p>
+    </footer>
+
+    <script src="combinedScript.js"></script>
+</body>
+</html>
